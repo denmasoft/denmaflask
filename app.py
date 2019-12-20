@@ -19,8 +19,6 @@ from google.oauth2 import service_account
 from google.cloud import vision
 from pdf2image import convert_from_path
 import cv2 as cv
-
-from aws_utils import save_to_s3, save_to_dynamo, update_in_dynamo, get_from_dynamo, query_dynamo, scan_dynamo
 from Middlewares import CreateModelMiddleware
 s3 = boto3.client('s3')
 

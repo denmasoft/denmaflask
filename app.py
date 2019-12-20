@@ -24,8 +24,6 @@ s3 = boto3.client('s3')
 
 # flask app config
 app = Flask(__name__)
-app.config['UPLOADS_FOLDER'] = UPLOADS_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 CORS(app, resources={r"/*": {"origins": "*"}})
 app.wsgi_app = CreateModelMiddleware(app.wsgi_app)
 

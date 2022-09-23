@@ -33,7 +33,7 @@ pdf2image==1.5.1
 Pillow==6.2.0
 plac==0.9.6
 preshed==2.0.1
-protobuf==3.7.1
+protobuf==3.18.3
 pyap==0.2.0
 pyasn1==0.4.5
 pyasn1-modules==0.2.4
